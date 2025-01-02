@@ -82,7 +82,7 @@ function closedProject(){
 function putItem(div) {
   var project = [];
   $.ajax({
-    url : './project.json',
+    url : '../project.json',
     type : 'get',
     datatype : 'json',
     success : function(result) {
