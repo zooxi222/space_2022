@@ -1,0 +1,105 @@
+{
+    "health" : {
+        "title" : "공무원 건강검진예약 (PC, ADMIN)",
+        "description" : "입사 후 처음으로 맡은 프로젝트로 기존에 있던 건강검진 예약 폼에 패키지선택, 계산등의 기능이 추가되었어야해서 오래된 UIUX도 거둬내 새롭게 리뉴얼하는 방향으로 진행했습니다.\n홈페이지 UI 체계가 없어서(이미지, 테이블코딩) 건강검진을 구현하면서 체계를 만들고 타 페이지들의 체계를 통일해나가는 작업도 진행했습니다.",
+        "link" : "",
+        "date" : "2021.02 ~ 2021.04",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱" ,
+        "useTool": "피그마, 아톰",
+        "memo" : "폐쇄몰 특성 상 로그인이 필요하므로 이미지로 대체하였습니다.",
+        "lang" : "HTML5, CSS3, JQUERY, AJAX, ASP, EUC-KR",
+        "src" : "images/project-health.png",
+        "count" : "8"
+    }, 
+    "summer" : {
+        "title" : "공무원 휴양소 예약 (PC,MOBILE)",
+        "description" : "2014년부터 진행해오던 계절 이벤트였으나 다년간 퍼블리셔의 부재로 디자인팀에서 이미지파일을 한땀한땀 제작해 분기마다 2주정도의 준비기간이 소요됐었습니다. 우선 오래된 배경과 이미지 방식 코딩 제거하여 디자인의 통일성을 갖추고 동·하계 페이지를 통일하여 이벤트 준비기간을 1일로 단축시켰습니다.",
+        "link" : "",
+        "date" : "2021.06 ~ 2021.06",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱," ,
+        "useTool": "피그마, 아톰",
+        "memo" : "폐쇄몰 특성 상 로그인이 필요하므로 이미지로 대체하였습니다.",
+        "lang" : "HTML5, CSS3, JQUERY, AJAX, ASP, EUC-KR",
+        "src" : "images/project-summer.png",
+        "count" : "6"
+    },
+    "aqua" : {
+        "title" : "아쿠아리움 예약 (PC,MOBILE)",
+        "description" : "고양시청 대상으로 새롭게 선보였던 이벤트 프로젝트입니다. 한정적인 틀 안에서 최대한으로 새로운 UI와 동적기능을 구현하고자 했습니다. 기존에 없던 티켓형 바코드 이미지 표출, 포인트사용, 자동등록방지문자API 적용 등 성공적으로 구현했습니다.",
+        "link" : "",
+        "date" : "2021.10 ~ 2021.11",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱, 프론트단" ,
+        "useTool": "피그마, 아톰",
+        "memo" : "폐쇄몰 특성 상 로그인이 필요하므로 이미지로 대체하였습니다.",
+        "lang" : "HTML5, CSS3, JQUERY, ASP, captcha, EUC-KR",
+        "src" : "images/project-aqua.png",
+        "count" : "3"
+    },
+    "netiwell" : {
+        "title" : "네티웰 기업 홈페이지 (PC)",
+        "description" : "오랜기간 관리되어있지 않던 HTML형식과 테이블과 이미지코딩이 난무하던 회사 홈페이지를 언젠가 꼭 리뉴얼하겠다고 마음먹고있던터에 잠시 한가한 기간이 생겼고 구조잡기부터 천천히 시작했습니다.\n회사를 다닌지 1년이 좀 되지않는 기간이었지만 회사소개 출력물을 만들었던 경험을 토대로 기존 내용을 가감하여 새로운 홈페이지로 리뉴얼하게 되었습니다.",
+        "link" : "http://www.netiwell.com",
+        "date" : "2022.01 ~ 2022.02",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱, 프론트단" ,
+        "useTool": "피그마, 에디터플러스",
+        "memo" : "",
+        "lang" : "HTML5, CSS3, JAVASCRIPT, JQUERY, ASP, UTF-8",
+        "src" : "images/project-netiwell.png"
+    },
+    "emalln" : {
+        "title" : "자회사 홈페이지 (RESPONSIVE)",
+        "description" : "단순 소개 원페이지 구현. 요청 시 굉장히 간단한 정보성 페이지를 요청하여 업종에 맞는 회사소개 문구 및 아이콘 제작하여 구현했습니다.",
+        "link" : "http://www.emalln.com/",
+        "date" : "2022.03 ~ 2022.03",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱" ,
+        "useTool": "피그마, 에디터플러스",
+        "memo" : "",
+        "lang" : "HTML5, CSS3, JAVASCRIPT, JQUERY, ASP, UTF-8",
+        "src" : "images/project-emalln.png"
+    },
+    "hnh" : {
+        "title" : "한노협 홈페이지 부분개발 (RESPONSIVE, ADMIN)",
+        "description" : "1차 개발이 끝났지만 관리자의 추가개발,수정 요청에 따라 회원가입단을 수정하고, 정보변경신청 단을 추가 개발했습니다.\n회원가입단 소속 구분을 명확히 지어주고 서류업로드 폼을 추가, 정보변경신청 로직 신구축, 관리자단 페이지 구성으로 이루어져있습니다.",
+        "link" : "http://hnh.or.kr/sub.html?submenu_id=6",
+        "date" : "2020.08 ~ 2022.09",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱" ,
+        "useTool": "포토샵, 일러스트레이터, 브라켓",
+        "memo" : "정보변경신청은 로그인이 필요하여 이미지설명으로 대체하였습니다.",
+        "lang" : "HTML5, CSS3, JQUERY, EUC-KR",
+        "src" : "images/project-hnh.png",
+        "count" : "2"
+    },
+    "young" : {
+        "title" : "신논현 영의원",
+        "description" : "지인분께서 운영하시는 병원 홈페이지 입니다.\n관리자 기능이 없는 간단한 홍보페이지를 원하셔서 30만원이란 돈을 받고 제작해드린 첫 프로젝트입니다.\n이와 관련하여 현재까지 약 2년동안 배너디자인, 의료홍보 웹디자인, 출력물 디자인, 네이버광고, sns 광고 등 다양한 마케팅 작업도 함께 진행하고 있습니다.\n현재는 아임웹이라는 홈페이지 빌더를 사용해 운영해오고 있습니다.",
+        "link" : "http://zooxi.kr/young/",
+        "date" : "2022.01 ~ 2022.04",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱, 프론트단" ,
+        "useTool": "피그마, 비쥬얼스튜디오 코드",
+        "memo" : "",
+        "lang" : "HTML5, CSS3, JAVASCRIPT, JQUERY, PHP, UTF-8",
+        "src" : "images/project-young.png"
+    },
+    "cafeplan" : {
+        "title" : "모바일 폐쇄몰 전체 리뉴얼 (WEB/APP)",
+        "description" : "하이브리드 앱이 없이 모바일로만 운영되어오던 모바일 폐쇄몰에 사용자 문제 제기가 늘어남에 따라 전체 리뉴얼을 진행하게 되었습니다.\n환급신청, 포인트확인, 쇼핑몰기능을 주로 잡았고 UX 개선에 중점을 두고 제작하였습니다.\n현재 IOS와 ANDROID 앱 심사를 마치고 운영중에 있습니다.",
+        "link" : "https://m.cafeplan.co.kr",
+        "date" : "2022.05 ~ 2022.10",
+        "part" : "스케치, 기획, UIUX 디자인, 퍼블리싱, 프론트단" ,
+        "useTool": "피그마, 비쥬얼스튜디오 코드",
+        "memo" : "",
+        "lang" : "HTML5, CSS3, JAVASCRIPT, JQUERY, ASP, UTF-8",
+        "src" : "images/project-cafeplan.png",
+        "count" : "9"
+    },
+    "memovie" : {
+        "title" : "",
+        "description" : "",
+        "link" : "",
+        "date" : "",
+        "part" : "" ,
+        "useTool": "",
+        "memo" : "",
+        "lang" : ""
+    }
+}

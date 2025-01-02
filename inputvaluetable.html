@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax 테스트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        border-style: none;
+        border: none;
+      }
+      table.dataTable {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+        word-break: keep-all;
+      }
+      table.dataTable thead th {
+        text-align: center;
+      }
+      table.dataTable thead th,
+      td {
+        padding: 7px 0;
+        line-height: 160%;
+      }
+      table.dataTable tbody tr {
+        cursor: pointer;
+      }
+      table.dataTable tbody tr:nth-child(odd) {
+        background: #cdf3e440;
+        border-top: 1px solid #cdf3e4;
+        border-bottom: 1px solid #cdf3e4;
+      }
+      table.dataTable tbody tr:hover {
+        background: #5ed1a333;
+      }
+      table.dataTable thead th.no {
+        width: 50px;
+      }
+      table.dataTable thead th.name {
+        width: 50px;
+      }
+      table.dataTable thead th.tel {
+        width: 100px;
+      }
+      table.dataTable thead th.memo {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reportTarget" class="box-body">
+      <table class="dataTable">
+        <thead>
+          <tr>
+            <th class="no">번호</th>
+            <th>시작일</th>
+            <th>종료일</th>
+            <th>차량번호</th>
+            <th class="name">이름</th>
+            <th class="tel">연락처</th>
+            <th>종류</th>
+            <th>상태</th>
+            <th>결제요금</th>
+            <th>결제수단</th>
+            <th class="memo">비고</th>
+            <th>그룹명</th>
+          </tr>
+        </thead>
+        <tbody id="custom-table"></tbody>
+      </table>
+      <p id="custom-select"></p>
+    </div>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "http://110.10.17.81:2080/api/admin/select/ticket/list?appStore=WEB_USER&page=1&carNo=&userName=&localMonthlyTicketGroupId=&dong=&ho=&etc=&isFree=a&order=desc&limit=100&_=1667552007199",
+      }).done(function (ajaxData) {
+        let list = ajaxData["list"];
+        // console.log(list);
+
+        let customTr = Array.from({ length: 100 }, (i, v) => optionTemplate(v)).join("");
+        //console.log("i:"+i+"v:"+v)
+        document.getElementById("custom-table").innerHTML = customTr;
+
+        function optionTemplate(num) {
+          console.log(num);
+          return `<tr>
+                      <td>${list[num].seq}</td>
+                      <td>${list[num].fromDate}</td>
+                      <td>${list[num].toDate}</td>
+                      <td>${list[num].carNo}</td>
+                      <td>${list[num].userName}</td>
+                      <td>${list[num].tel}</td>
+                      <td>${list[num].infoName}</td>
+                      <td>${list[num].isUse}</td>
+                      <td>${list[num].price}</td>
+                      <td>${list[num].paymentMethod}</td>
+                      <td>${list[num].etc}</td>
+                      <td>${list[num].groupName}</td>
+                  </tr>`;
+        }
+        // let tr = Array.from({ length: 100 }, (v, i) => optionTemplate(i + 1)).join("");
+        // document.getElementById("custom-select").innerHTML = count;
+
+        // function optionTemplate(value, title = value) {
+        //   return `<option value = ${value} > ${title} </option>`;
+        // }
+        // 데이터를 아작스데이터라는 변수로 지정, 아작스데이터의 list 항목을
+      });
+    </script>
+  </body>
+</html> 

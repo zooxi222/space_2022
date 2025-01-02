@@ -1,0 +1,70 @@
+/* font-family: 'Fugaz One', cursive; */
+/* .first img.title{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    width:800px;
+}
+.first img.light_bg{
+    position: absolute;
+    bottom:0; left:50%;
+    transform: translateX(-50%);
+}
+.first img.left-sportlight{
+    position: absolute;
+    bottom:5px; left:320px;
+    animation: leftLight 5s infinite linear;
+    transform: rotate(0);
+    transform-origin: left bottom;
+}
+@keyframes leftLight {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(-12deg);}
+    100%{transform: rotate(0);}
+}
+.first img.right-sportlight{
+    position: absolute;
+    bottom:25px; right:340px;
+    animation: rightLight 5s infinite linear;
+    transform: rotate(0);
+    transform-origin: right bottom;
+}
+@keyframes rightLight {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(0);}
+} */
+/* .section.first h1{
+    text-indent: -999em;
+    background:url(../images/moon.png) no-repeat center;
+    background-size:179px;
+    width:200px; height:200px;
+    display: inline-block;
+    position: absolute;
+    top:100px; left: 100px;
+    transform: rotate(0);
+    animation: firstMoon 8s infinite ease-in-out;
+}
+
+@keyframes firstMoon{
+    0%{transform: rotate(0);}
+    50%{transform: rotate(360deg);}
+    100%{transform: rotate(0);}
+} */
+
+/* .section.first span a{
+    text-indent: -999em;
+    background:url(../images/first-down-arrow.png) no-repeat center;
+    background-size: 69px;
+    width:100px; height:200px;
+    display: inline-block;
+    position: absolute;
+    bottom:50px; left:49%;
+    transform: translateX(-50%);
+    animation: firstArrow 1s infinite ease-in-out;
+}
+@keyframes firstArrow{
+    0%{bottom:50px;}
+    50%{bottom:60px;}
+    100%{bottom:50px;}
+} */

@@ -1,0 +1,150 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@font-face {
+    font-family: 'S-Core Dream 2';
+    src: url('../webfont/S-CoreDream-2ExtraLight.woff2') format('woff2'),
+        url('../webfont/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream 5';
+    src: url('../webfont/S-CoreDream-5Medium.woff2') format('woff2'),
+        url('../webfont/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream 8';
+    src: url('../webfont/S-CoreDream-8Heavy.woff2') format('woff2'),
+        url('../webfont/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core Dream 9';
+    src: url('../webfont/S-CoreDream-9Black.woff2') format('woff2'),
+        url('../webfont/S-CoreDream-9Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* -------------------------------------- */ 
+
+.container {
+    width:500px; 
+    margin:0 auto;
+}
+.fixed-nav {
+    z-index: 999;
+    position: absolute;
+
+}
+body .section{
+    margin: 0 auto;
+}
+h3{
+    color:#ffffd9;
+    font-family: 'S-Core Dream 8';
+}
+p, span, a, li, ul{
+    color:#ffffd9;
+    font-family: 'S-Core Dream 5';
+}
+
+.section .starBg_1{
+    background:url(../images/star-1.png) no-repeat center;
+    background-size:1465px;
+    width:100%; height:100%;
+    animation: star1 2s infinite;
+}
+@keyframes star1{
+    0%{background:url(../images/star-1.png) no-repeat center;}
+    100%{background:url(../images/star-1-none.png) no-repeat center;}
+}
+
+.section .starBg_2{
+    background:url(../images/star-2-none.png) no-repeat center;
+    background-size:1699px;
+    width:100%; height:100%;
+    animation: star2 2s infinite;
+}
+@keyframes star2{
+    0%{background:url(../images/star-2-none.png) no-repeat center;}
+    100%{background:url(../images/star-2.png) no-repeat center;}
+}
+.section.second h2, .section.fourth h2{
+    font-size: 40px;
+    color:#001d3f;
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+}
+.section.third h2, .section.fifth h2{
+    font-size: 40px;
+    color:#fff200;
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+}
+
+.section .scrollDown {
+    border:1px solid #faff6a;
+    width:38px; height:80px;
+    border-radius: 19px;
+    display: inline-block;
+    position: absolute;
+    bottom:30px; left:50%;
+    transform:translateX(-50%);
+    /* animation: scrolldownbox 1s infinite linear; */
+}
+/* @keyframes scrolldownbox{
+    0% {bottom:30px;}
+    50% {bottom:20px;}
+    100% {bottom:30px;}
+} */
+.section .scrollDown > a{
+    display: inline-block;
+    width:30px; height:70px;
+    background:url(../images/sprites.png) no-repeat;
+    background-position: -49px -11px;
+    text-indent: -999em;
+    animation: scrolldown 1s infinite linear;
+    clip:rect(0, 30px, 0, 0);
+    position: absolute;
+}
+@keyframes scrolldown{
+    from {clip: rect(0, 30px, 0, 0); }
+    to {clip: rect(0, 30px, 70px, 0); }
+}
+
+.section.second .scrollDown, .section.fourth .scrollDown {
+    border:1px solid #001d3f;
+}
+.section.second .scrollDown > a, .section.fourth .scrollDown > a{
+    background-position: -49px -90px;
+}
+.section.fourth p, .section.fourth h3{
+    color:#3c3c3c;
+    font-family: 'S-Core Dream 5';
+    font-size: 16px;
+}
+.section .section_title{
+    
+    text-align: center;
+}
+.section .section_title h2{
+    margin-bottom:27px;
+}
+.section.first, .section.third, .section.fifth{
+    background:url(../images/space-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+

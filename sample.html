@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ㅎㅇㅎㅇ</title>
+</head>
+<body>
+  <script>
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'];
+  let data = Array.from({length: 20}).map(item => {
+    return {
+      name: Array.from({length: 5}).map(i => alphabet[getRandomInt(0, 11)]).join(''),
+      price: Number(Array.from({length: 5}).map(k => getRandomInt(0, 5)).join(''))
+    }
+  });
+  var priceArray = [];
+  var maxPrice, maxName, totalPrice, idx;
+
+  for(var i = 0; i < data.length; i++) {
+    priceArray.push(data[i].price);
+    maxPrice = Math.max.apply(null,priceArray);
+    idx = priceArray.indexOf(maxPrice)
+    maxName = data[idx].name;
+    totalPrice = priceArray.reduce((a,b) => (a+b))
+  }
+  document.write("최대값 이름 : " + maxName + " / 최대값 : " + maxPrice + " / 총 합 : " + totalPrice)
+  
+  
+
+// 가장 비싼 가격과 이름, 추출
+// 가격 합계
+
+  </script>
+</body>
+</html>
